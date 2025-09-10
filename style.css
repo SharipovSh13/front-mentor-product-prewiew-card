@@ -13,10 +13,13 @@ body {
   display: grid;
   place-items: center;
 }
-.card img {
+.card .img1 {
   border-radius: 12px;
   max-inline-size: 99%;
   block-size: auto;
+}
+.card .img2 {
+  display: none;
 }
 
 .title-card {
@@ -61,7 +64,7 @@ body {
   align-items: center;
   gap: 12px;
 }
-.price > .price-real {
+.price-real {
   color: hsl(158, 36%, 37%);
   font-size: 1.6rem;
 }
@@ -80,4 +83,146 @@ button {
   color: white;
   margin-top: 10px;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 375px) {
+  .card .img1 {
+    display: none;
+  }
+  .card .img2 {
+    grid-template-columns: 1fr;
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+    object-fit: contain;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .type-product {
+    font-size: 1.9vw;
+    margin: 0;
+  }
+  .title {
+    font-size: 4.8vw;
+  }
+  .type-product2 {
+    font-size: 2.2vw;
+  }
+  .price-real {
+    font-size: 6vw;
+  }
+  .price-notreal {
+    font-size: 4vw;
+  }
+  button {
+    margin-bottom: 0;
+    font-size: 2.5vw;
+    height: 6vw;
+  }
+  .body-main {
+    max-width: 425px;
+  }
+}
+
+@media screen and (min-width: 510px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .type-product {
+    font-size: 1.6vw;
+    margin: 0;
+  }
+  .title {
+    font-size: 3.8vw;
+  }
+  .type-product2 {
+    font-size: 1.9vw;
+  }
+  .price-real {
+    font-size: 4.7vw;
+  }
+  .price-notreal {
+    font-size: 3.8vw;
+  }
+  button {
+    margin-bottom: 0;
+    font-size: 2.9vw;
+    height: 4.9vw;
+  }
+  .body-main {
+    max-width: 425px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 620px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .type-product {
+    font-size: 1.6vw;
+    margin: 0;
+  }
+  .title {
+    font-size: 3.8vw;
+  }
+  .type-product2 {
+    font-size: 1.9vw;
+  }
+  .price-real {
+    font-size: 4.7vw;
+  }
+  .price-notreal {
+    font-size: 3.8vw;
+  }
+  button {
+    margin-bottom: 0;
+    font-size: 2.9vw;
+    height: 4.9vw;
+  }
+  .body-main {
+    max-width: 725px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .type-product {
+    font-size: 2vw;
+    margin: 0;
+  }
+  .title {
+    font-size: 3.1vw;
+  }
+  .type-product2 {
+    font-size: 1.6vw;
+  }
+  .price-real {
+    font-size: 2.5vw;
+  }
+  .price-notreal {
+    font-size: 2.1vw;
+  }
+  button {
+    margin-bottom: 0;
+    font-size: 2.5vw;
+    height: 4.5vw;
+  }
+  .body-main {
+    max-width: 765px;
+    margin: auto;
+  }
 }

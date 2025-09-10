@@ -26,7 +26,7 @@ body {
   width: 90%;
   margin: auto;
 }
-.type-product {
+.types-products {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -103,7 +103,7 @@ button {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-  .type-product {
+  .types-products {
     font-size: 1.9vw;
     margin: 0;
   }
@@ -135,7 +135,7 @@ button {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-  .type-product {
+  .types-products {
     font-size: 1.6vw;
     margin: 0;
   }
@@ -167,7 +167,7 @@ button {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-  .type-product {
+  .types-products {
     font-size: 1.6vw;
     margin: 0;
   }
@@ -200,7 +200,7 @@ button {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-  .type-product {
+  .types-products {
     font-size: 2vw;
     margin: 0;
   }
